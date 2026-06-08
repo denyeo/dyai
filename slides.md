@@ -5,15 +5,15 @@ layout: two-cols
 lineNumbers: false
 routerMode: hash
 info: |
-  The Pragmatic AI Era
+  The Agentic Era for Dummies
   A Builder's Guide for Managers & Professionals
 drawings:
   persist: false
 transition: slide-left
-title: The Pragmatic AI Era
+title: The Agentic Era for Dummies
 ---
 
-<img src="/images/sunlit-staircase.jpg" style="max-height: 62vh" class="w-auto object-contain rounded-lg shadow-2xl" />
+<img src="/images/sunlit-staircase.jpg" style="max-height: 72vh" class="w-auto object-contain rounded-lg shadow-2xl" />
 
 ::right::
 
