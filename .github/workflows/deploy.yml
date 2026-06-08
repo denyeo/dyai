@@ -1,0 +1,38 @@
+name: Deploy to gh-pages
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 'lts/*'
+          cache: pnpm
+
+      - run: pnpm install --no-frozen-lockfile
+      - run: pnpm run build
+
+      - name: Deploy to gh-pages branch
+        run: |
+          cp -r dist /tmp/dist
+          git checkout --orphan gh-pages-temp
+          rm -rf -- * .??* 2>/dev/null || true
+          cp -r /tmp/dist/* .
+          echo "" > .nojekyll
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add -A
+          git commit -m "Deploy $(date +%Y-%m-%d-%H%M%S)" || true
+          git push --force origin gh-pages-temp:gh-pages
