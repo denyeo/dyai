@@ -1,8 +1,7 @@
 ---
 theme: seriph
-background: /images/sunlit-staircase.jpg
 class: text-center
-highlighter: shiki
+layout: two-cols
 lineNumbers: false
 info: |
   The Pragmatic AI Era
@@ -13,10 +12,18 @@ transition: slide-left
 title: The Pragmatic AI Era
 ---
 
+<img src="/images/sunlit-staircase.jpg" style="max-height: 62vh" class="w-auto object-contain rounded-lg shadow-2xl" />
+
+::right::
+
+<div class="flex flex-col justify-center items-start text-left h-full">
+
 # The Agentic Era for Dummies
 
 ### <i>Dennis Yeo</i>
 ### <i>CPO, Tradesocio</i>
+
+</div>
 
 <!--
 AI in the Workplace Panel
@@ -28,7 +35,7 @@ A Builder's Guide for Managers & Professionals
 layout: default
 ---
 
-# 01. How we got here
+# 01a. How we got here
 
 <div class="grid grid-cols-4 gap-4 mt-8">
 
@@ -85,7 +92,7 @@ Timeline progression showing the 4 phases of LLM evolution:
 layout: default
 ---
 
-# 01a. What is a "transformer" LLM, exactly?
+# 01b. What is a "transformer" LLM, exactly?
 
 - Input text: `The dog ate my`
 - Words -> tokens (little chunks of words)
@@ -93,12 +100,12 @@ layout: default
   - E.g. `[0.7, 0.2, ...]`, one for every single word chunk in the text
   - A vector can capture complex ideas and even combinations of ideas
 - The "thinking": all the vectors are fed into a series of layers that analyze different aspects
-  - Each layer is (attention mechanism -> multilayer perceptron)
+  - Each layer is (attention pattern -> multilayer perceptron)
 - The final layer emits vectors; the very last one represents the most likely next token (word chunk) that follows after the text
   - That _single word chunk_ is the result of **all the computation across all words in the text.**
   - `The dog ate my [homework]`
-- The entire process is repeated using the full text + that single predicted token, generating more text.
-- If you make models big enough, you can train them to produce pretty logical sentences.
+- Repeat entire process using the full text + that single predicted token, generating more text (**"inference"**).
+- If you make LLMs big enough, you can train them to produce pretty logical sentences.
   - Sentences like those a human might write.
 
 ---
@@ -180,7 +187,7 @@ layout: default
 <tbody class="divide-y divide-slate-800/50">
 <tr>
 <td class="py-2.5 px-4 align-top">
-  <span class="font-medium text-red-400/70">Rigid Rules</span><br>
+  <span class="font-medium text-red-400/70">Fixed Rules</span><br>
   <span class="text-slate-400">If X happens, trigger Y.</span>
 </td>
 <td class="py-2.5 px-4 align-top">
@@ -190,11 +197,11 @@ layout: default
 </tr>
 <tr>
 <td class="py-2.5 px-4 align-top">
-  <span class="font-medium text-red-400/70">Manual Synthesis</span><br>
+  <span class="font-medium text-red-400/70">Manual Investigation</span><br>
   <span class="text-slate-400">Managers read logs to find patterns.</span>
 </td>
 <td class="py-2.5 px-4 align-top">
-  <span class="font-medium text-emerald-400/70">Automated Narrative</span><br>
+  <span class="font-medium text-emerald-400/70">Automated Synthesis</span><br>
   <span class="text-slate-400">AI synthesizes raw data into executive summaries.</span>
 </td>
 </tr>
@@ -219,7 +226,7 @@ layout: default
 layout: default
 ---
 
-# 03a. Building agentic systems
+# 02c. Building agentic systems
 
 <div class="grid grid-cols-2 gap-6 mt-4">
 
@@ -277,13 +284,14 @@ Business benefits: control, auditability, deterministic behavior
 layout: default
 ---
 
-# 03b. Fintech (trading) applications
+# 03a. Fintech (trading) applications
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
 <img src="/images/ai-account-mgr-talking-points.png" class="rounded-lg shadow-lg" />
 
 <div class="space-y-4">
+<br><br><br><br>
 
 ### Client analysis for account managers
 
@@ -299,7 +307,7 @@ layout: default
 zoom: 0.7
 ---
 
-# 03b. Fintech (trading) applications
+# 03b. Portfolio generation 1
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
@@ -320,7 +328,7 @@ layout: default
 zoom: 0.68
 ---
 
-# 03c. Portfolio Generation (1/4)
+# 03c. Portfolio generation 2
 
 <div class="grid grid-cols-2 gap-4 mt-4 place-items-center">
 
@@ -335,7 +343,7 @@ layout: default
 zoom: 0.5
 ---
 
-# 03d. Portfolio Generation (2/4)
+# 03d. Portfolio generation 3
 
 <div class="grid grid-cols-2 gap-4 mt-4 place-items-center">
 
@@ -349,7 +357,7 @@ zoom: 0.5
 layout: default
 ---
 
-# 03e. Portfolio Generation (3/4)
+# 03e. Portfolio generation 4
 
 <div class="flex justify-center items-center">
 <img src="/images/ai-portfolio-gen-06.webp" class="rounded-lg shadow-lg" />
@@ -359,7 +367,7 @@ layout: default
 layout: default
 ---
 
-# 03f. Portfolio Generation (4/4)
+# 03f. Portfolio generation 5
 
 <div class="flex justify-center items-center">
 <img src="/images/ai-portfolio-gen-07.png" class="rounded-lg shadow-lg" />
@@ -414,6 +422,22 @@ Behind the scenes, the platform handles the hard parts: executing the instructio
 
 ---
 layout: default
+zoom: 0.42
+---
+
+<div class="flex justify-center items-center">
+<img src="/images/ai-agent-use-across-industries.webp" class="rounded-lg shadow-lg" />
+
+<div class="ml-2em">
+
+# _Microsoft WorkLab, May 2026:_
+# "Frontier Professionals are even more aware of the importance of human judgment when working with AI. They rank higher across every measure in the survey related to **critical thinking** and **quality control**—and that shows up in how they work."
+
+</div>
+</div>
+
+---
+layout: default
 ---
 
 # 05a. The AI-enabled workplace in 2026
@@ -428,9 +452,9 @@ layout: default
 
 ### Redesigning processes and roles
 
-- As a leader, you probably should be rethinking and redesigning work processes once you have the AI infrastructure and integration to support it.
-- We're all seeing roles and responsibilities shift due to the changing calculus of AI.
-- The people who rapidly adapt to the changes and opportunities brought by AI will do better as workflows are rearchitected around AI/agents.
+- As a leader, you probably should be rethinking and redesigning work processes once you have the AI infrastructure and integration to support it. Your teams will likely need coaching on effective AI use.
+- Evaluate AI output critically to avoid egg in face or worse. Your judgment is required.
+- We're all seeing roles and responsibilities shift due to the changing calculus of AI. The people who rapidly adapt to the changes and opportunities brought by AI will stand out as workflows are rearchitected around AI/agents.
 
 ---
 layout: default
@@ -438,14 +462,15 @@ layout: default
 
 # 05b. The AI-enabled workplace in 2026
 
-### Owning stakeholder/client relationships remains highly valuable
+### Owning **stakeholder/client relationships** is now even more valuable
 
 <br>
 
 ### Turning business knowledge into agentic workflows that you own
 
 - Increasingly valuable: the knowledge of messy, undocumented business processes and the ability to turn them into accurate, productive agentic workflows.
-- Owning and updating these workflows will probably be defensible for some time (until & unless AI takes even that over). <b>Keep your work visible.</b>
+- Owning and updating these workflows will probably be defensible for some time (until & unless AI takes even that over).
+- <b>Keep your work visible.</b>
 
 Ask yourself:
 
@@ -461,10 +486,10 @@ layout: default
 
 # 05c. AI themes continuing in mid-2026
 
-- AI capabilities steadily continue to grow amid hype and backlash
+- AI capabilities & capacity steadily continue to grow amid hype and backlash
   - Agentic workflows continue to roll out across AI-forward companies
 - AI costs are becoming a problem that management cares about
-  - Open-weights models (Deepseek, GLM, Kimi, Xiaomi's Mimo) which can be run privately are likely to gain more enterprise interest as they reach new levels of capability
+  - Open-weights LLMs (Deepseek, GLM, Kimi, Xiaomi's Mimo) which can be run privately are likely to gain more enterprise interest as they reach new levels of capability
 - Software/SaaS is becoming commoditized by AI coding
   - "Just build it in-house" has become viable for lower-complexity use cases; build-vs-buy has shifted
 - AI coding is becoming a hobby for some, especially the technically-inclined
