@@ -61,7 +61,7 @@ layout: default
 <div class="bg-[#0B0F19] p-5 rounded-lg border border-slate-800 flex flex-col justify-between h-90">
 <div>
 <span class="font-mono text-xs text-slate-500 block mb-2">2024 - 2025</span>
-<h3 class="text-lg font-bold text-white mb-3">Tool Calling</h3>
+<h3 class="text-lg font-bold text-white mb-3">Tool-calling</h3>
 <p class="text-xs text-slate-400 leading-relaxed">AI began being used to <b>decide and execute actions</b>. LLMs were made to output in structured formats, allowing them to be used to call tools/APIs and query databases.</p>
 </div>
 <div class="text-xs font-mono text-slate-600">Phase 03 // Tool Use</div>
@@ -74,7 +74,7 @@ layout: default
 <h3 class="text-lg font-bold text-white mb-3 bg-gradient-to-r from-white to-sky-400 bg-clip-text text-transparent">Agentic networks</h3>
 <p class="text-xs text-slate-300 leading-relaxed">Networks of agents running autonomously in loops, on schedules, or triggered by events. Systems that draw on corporate resources/tools and execute complex, long-running tasks. Agents triggering other agents.</p>
 </div>
-<div class="text-xs font-mono text-slate-600">Phase 04 // State Management</div>
+<div class="text-xs font-mono text-slate-600">Phase 04 // The Agent Era</div>
 </div>
 
 </div>
