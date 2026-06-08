@@ -3,6 +3,7 @@ theme: seriph
 class: text-center
 layout: two-cols
 lineNumbers: false
+routerMode: hash
 info: |
   The Pragmatic AI Era
   A Builder's Guide for Managers & Professionals
