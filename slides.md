@@ -95,7 +95,7 @@ layout: default
 - The "thinking": all the vectors are fed into a series of layers that analyze different aspects
   - Each layer is (attention mechanism -> multilayer perceptron)
 - The final layer emits vectors; the very last one represents the most likely next token (word chunk) that follows after the text
-  - That _single word chunk_ is the result of all the computation across all words in the text.
+  - That _single word chunk_ is the result of **all the computation across all words in the text.**
   - `The dog ate my [homework]`
 - The entire process is repeated using the full text + that single predicted token, generating more text.
 - If you make models big enough, you can train them to produce pretty logical sentences.
@@ -109,7 +109,7 @@ layout: default
 
 Strip away the marketing pitch, and an agent is **not** an artificial mind. It is a **deterministic software loop** that calls (uses) LLMs to get instructions on what to do until the task is done.
 
-Agents aren't magic; they are a way of building software that uses LLMs.
+Agents are **empowered by connecting them to tools and data.**
 
 ```mermaid
 flowchart LR
@@ -149,17 +149,71 @@ layout: default
 ---
 
 # 02b. Agents transform operations for small teams
+<br>
 
-Traditional Approach,Agentic Approach
-"Rigid Rules: If X happens, trigger Y.","Contextual Reasoning: If X happens, investigate, compare with history, and decide."
-Manual Synthesis: Managers read logs to find patterns.,Automated Narrative: AI synthesizes raw data into executive summaries.
-High Friction: Human must intervene for every edge case.,"High Leverage: Humans manage the ""exception"" while AI handles the ""routine."""
+<div class="grid grid-cols-2 gap-8 mt-4">
 
-Real-world impact:
-In risk monitoring, we don't just flag "unusual activity" for a human to review in the morning. An agent immediately pulls the user's history, cross-references recent actions, login patterns, IP addresses, etc., and prepares a summary or triggers an alert or access suspension.
+<div class="text-xs">
 
-Result:
-Operations teams shift from heavy manual investigation to more targeted, deeper analysis, and start managing outcomes at a higher level.
+#### Real-world impact
+
+> In risk monitoring, we don't just flag "unusual activity" for a human to review in the morning. An agent immediately pulls the user's history, cross-references recent actions, login patterns, IP addresses, etc., and prepares a summary or triggers an alert or access suspension.
+
+<div class="mt-6">
+
+#### Result
+> Operations teams shift from heavy manual investigation to more targeted, deeper analysis, and start managing outcomes at a higher level.
+
+</div>
+
+</div>
+
+<div>
+
+<table class="w-full text-xs border-separate border-spacing-0 rounded-lg overflow-hidden">
+<thead>
+<tr>
+<th class="w-1/2 py-2 px-4 bg-red-500/10 text-left text-red-400/80 font-semibold uppercase tracking-wider border-b border-slate-800">Traditional Approach</th>
+<th class="w-1/2 py-2 px-4 bg-emerald-500/10 text-left text-emerald-400/80 font-semibold uppercase tracking-wider border-b border-slate-800">Agentic Approach</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-slate-800/50">
+<tr>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-red-400/70">Rigid Rules</span><br>
+  <span class="text-slate-400">If X happens, trigger Y.</span>
+</td>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-emerald-400/70">Contextual Reasoning</span><br>
+  <span class="text-slate-400">If X happens, investigate, compare with history, and decide.</span>
+</td>
+</tr>
+<tr>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-red-400/70">Manual Synthesis</span><br>
+  <span class="text-slate-400">Managers read logs to find patterns.</span>
+</td>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-emerald-400/70">Automated Narrative</span><br>
+  <span class="text-slate-400">AI synthesizes raw data into executive summaries.</span>
+</td>
+</tr>
+<tr>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-red-400/70">High Friction</span><br>
+  <span class="text-slate-400">Human must intervene for every edge case.</span>
+</td>
+<td class="py-2.5 px-4 align-top">
+  <span class="font-medium text-emerald-400/70">High Leverage</span><br>
+  <span class="text-slate-400">Humans manage the &ldquo;exception&rdquo; while AI handles the &ldquo;routine.&rdquo;</span>
+</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</div>
 
 ---
 layout: default
@@ -223,7 +277,7 @@ Business benefits: control, auditability, deterministic behavior
 layout: default
 ---
 
-# 03b. Fintech (Trading) Applications
+# 03b. Fintech (trading) applications
 
 <div class="grid grid-cols-2 gap-4 mt-4">
 
@@ -233,7 +287,7 @@ layout: default
 
 ### Client analysis for account managers
 
-- AI reads information of clients
+- AI reads information of a client
 - Offers insights and talking points for an account manager to use
 
 </div>
@@ -245,11 +299,19 @@ layout: default
 zoom: 0.7
 ---
 
-# 03b. Fintech (Trading) Applications
+# 03b. Fintech (trading) applications
 
-<div class="grid grid-cols-1 gap-4 mt-4">
+<div class="grid grid-cols-2 gap-4 mt-4">
 
 <img src="/images/ai-portfolio-gen-01.png" class="rounded-lg shadow-lg" />
+
+<div class="space-y-4">
+
+<br><br><br><br><br><br><br><br><br>
+
+## Example: Portfolio generation
+
+</div>
 
 </div>
 
@@ -309,12 +371,12 @@ layout: default
 
 # 04. What are those no-code 'agent builders'?
 
-<div class="mt-4 mb-6 text-slate-400 max-w-3xl">
+<div class="mt-4 mb-6 text-slate-300 max-w-3xl">
 
 - When platforms like Salesforce Agentforce or Atlassian Rovo let you "build an agent with a prompt," you aren't building an AI engine.
 - You are **configuring a mini AI operating procedure** on top of the platform.
-- In simpler agents, the platform mainly stores your instructions and the allowed tools.
-- In more advanced agents, the platform can break the job into subagents, workflow steps, conditions, and approval points.
+- In simpler agent builders, the platform mainly stores your instructions and the allowed tools.
+- In more advanced agent builders, the platform can break the job into subagents, workflow steps, conditions, and approval points.
 
 </div>
 
@@ -354,7 +416,7 @@ Behind the scenes, the platform handles the hard parts: executing the instructio
 layout: default
 ---
 
-# 05a. The AI workplace in 2026
+# 05a. The AI-enabled workplace in 2026
 
 ### From searching to operating across systems
 
@@ -368,18 +430,22 @@ layout: default
 
 - As a leader, you probably should be rethinking and redesigning work processes once you have the AI infrastructure and integration to support it.
 - We're all seeing roles and responsibilities shift due to the changing calculus of AI.
-- The people who rapidly adapt to the changes and opportunities brought by AI will do better as functions are rearchitected around AI/agents.
+- The people who rapidly adapt to the changes and opportunities brought by AI will do better as workflows are rearchitected around AI/agents.
 
 ---
 layout: default
 ---
 
-# 05b. The AI workplace in 2026
+# 05b. The AI-enabled workplace in 2026
+
+### Owning stakeholder/client relationships remains highly valuable
+
+<br>
 
 ### Turning business knowledge into agentic workflows that you own
 
 - Increasingly valuable: the knowledge of messy, undocumented business processes and the ability to turn them into accurate, productive agentic workflows.
-- Owning and updating these workflows will probably be defensible for some time (until & unless AI takes even that over).
+- Owning and updating these workflows will probably be defensible for some time (until & unless AI takes even that over). <b>Keep your work visible.</b>
 
 Ask yourself:
 
@@ -387,7 +453,7 @@ Ask yourself:
 > - How do we observe what happens along the way?
 > - What rules, guardrails, and approval gates are needed to limit risk?
 > - How should we monitor the quality and correctness of the output/actions?
-> - Can all this be done in our existing AI infrastructure or is this worth additional investment?
+> - Can all this be done on our existing AI infrastructure or is this worth additional research/investment?
 
 ---
 layout: default
@@ -395,16 +461,16 @@ layout: default
 
 # 05c. AI themes continuing in mid-2026
 
-- AI capabilities steadily grow amid hype and backlash
+- AI capabilities steadily continue to grow amid hype and backlash
   - Agentic workflows continue to roll out across AI-forward companies
 - AI costs are becoming a problem that management cares about
-  - Open-weights models (Deepseek, GLM, Kimi, Xiaomi's Mimo) are likely to gain more enterprise interest as they reach new levels of capability
+  - Open-weights models (Deepseek, GLM, Kimi, Xiaomi's Mimo) which can be run privately are likely to gain more enterprise interest as they reach new levels of capability
 - Software/SaaS is becoming commoditized by AI coding
-  - "Just build it in-house" is becoming viable for lower-complexity use cases
+  - "Just build it in-house" has become viable for lower-complexity use cases; build-vs-buy has shifted
 - AI coding is becoming a hobby for some, especially the technically-inclined
 - The answer engine is starting to replace the search engine
   - AEO/GEO (Answer/Generative Engine Optimization) is replacing SEO for your brand/product's visibility
-  - Strategic advantage lies with AI chat/search engines, browsers, and phone makers
+  - Strategic advantage lies with interface owners: AI chat/search engines, browsers, and phone makers
 
 
 <br>
