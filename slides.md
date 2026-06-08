@@ -211,8 +211,58 @@ layout: default
 
 # 03b. Fintech (Trading) Applications
 
-INSERT IMAGES HERE
+<div class="grid grid-cols-2 gap-4 mt-4">
 
+<img src="/images/ai-account-mgr-talking-points.png" class="rounded-lg shadow-lg" />
+
+<img src="/images/ai-portfolio-gen-01.png" class="rounded-lg shadow-lg" />
+
+</div>
+
+
+---
+layout: default
+---
+
+# 03c. Portfolio Generation (1/4)
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+<img src="/images/ai-portfolio-gen-02.png" class="rounded-lg shadow-lg" />
+
+<img src="/images/ai-portfolio-gen-03.png" class="rounded-lg shadow-lg" />
+
+</div>
+
+---
+layout: default
+---
+
+# 03d. Portfolio Generation (2/4)
+
+<div class="grid grid-cols-2 gap-4 mt-4">
+
+<img src="/images/ai-portfolio-gen-04.png" class="rounded-lg shadow-lg" />
+
+<img src="/images/ai-portfolio-gen-05.png" class="rounded-lg shadow-lg" />
+
+</div>
+
+---
+layout: default
+---
+
+# 03e. Portfolio Generation (3/4)
+
+<img src="/images/ai-portfolio-gen-06.webp" class="rounded-lg shadow-lg" />
+
+---
+layout: default
+---
+
+# 03f. Portfolio Generation (4/4)
+
+<img src="/images/ai-portfolio-gen-07.png" class="rounded-lg shadow-lg" />
 
 ---
 layout: default
