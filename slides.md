@@ -6,7 +6,6 @@ lineNumbers: false
 info: |
   The Pragmatic AI Era
   A Builder's Guide for Managers & Professionals
-base: /dyai/
 drawings:
   persist: false
 transition: slide-left
