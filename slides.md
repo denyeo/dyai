@@ -1,7 +1,7 @@
 ---
 theme: seriph
 class: text-center
-layout: two-cols
+layout: default
 lineNumbers: false
 info: |
   The Agentic Era for Dummies
@@ -12,17 +12,17 @@ transition: slide-left
 title: The Agentic Era for Dummies
 ---
 
-<img src="/images/sunlit-staircase.jpg" style="max-height: 72vh" class="w-auto object-contain rounded-lg shadow-2xl" />
-
-::right::
-
-<div class="flex flex-col justify-center items-start text-left h-full">
+<div class="absolute inset-0 grid grid-cols-2">
+  <div class="bg-contain bg-no-repeat bg-center rounded-l-lg shadow-2xl overflow-hidden" style="background-image: url('/images/sunlit-staircase.jpg');">
+  </div>
+  <div class="flex flex-col justify-center pl-10">
 
 # The Agentic Era for Dummies
 
 ### <i>Dennis Yeo</i>
 ### <i>CPO, Tradesocio</i>
 
+  </div>
 </div>
 
 <!--
@@ -309,7 +309,7 @@ layout: default
 # 03b. Portfolio generation 1
 
 <div class="flex justify-center mt-2">
-  <img src="/images/ai-portfolio-gen-01.png" class="max-h-[430px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-01.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
 </div>
 
 <div class="text-center mt-2 text-sm opacity-70">Example: Portfolio generation</div>
@@ -322,8 +322,8 @@ layout: default
 # 03c. Portfolio generation 2
 
 <div class="grid grid-cols-2 gap-4 mt-2 place-items-center">
-  <img src="/images/ai-portfolio-gen-02.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
-  <img src="/images/ai-portfolio-gen-03.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-02.png" class="max-h-[440px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-03.png" class="max-h-[440px] object-contain rounded-lg shadow-lg" />
 </div>
 
 
@@ -334,8 +334,8 @@ layout: default
 # 03d. Portfolio generation 3
 
 <div class="grid grid-cols-2 gap-4 mt-2 place-items-center">
-  <img src="/images/ai-portfolio-gen-04.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
-  <img src="/images/ai-portfolio-gen-05.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-04.png" class="max-h-[440px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-05.png" class="max-h-[440px] object-contain rounded-lg shadow-lg" />
 </div>
 
 
