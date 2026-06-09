@@ -304,54 +304,40 @@ layout: default
 
 ---
 layout: default
-zoom: 0.7
 ---
 
 # 03b. Portfolio generation 1
 
-<div class="grid grid-cols-2 gap-4 mt-4">
-
-<img src="/images/ai-portfolio-gen-01.png" class="rounded-lg shadow-lg" />
-
-<div class="space-y-4">
-
-<br><br><br><br><br><br><br><br><br>
-
-## Example: Portfolio generation
-
+<div class="flex justify-center mt-2">
+  <img src="/images/ai-portfolio-gen-01.png" class="max-h-[430px] object-contain rounded-lg shadow-lg" />
 </div>
 
-</div>
+<div class="text-center mt-2 text-sm opacity-70">Example: Portfolio generation</div>
+
 
 ---
 layout: default
-zoom: 0.68
 ---
 
 # 03c. Portfolio generation 2
 
-<div class="grid grid-cols-2 gap-4 mt-4 place-items-center">
-
-<img src="/images/ai-portfolio-gen-02.png" class="rounded-lg shadow-lg" />
-
-<img src="/images/ai-portfolio-gen-03.png" class="rounded-lg shadow-lg" />
-
+<div class="grid grid-cols-2 gap-4 mt-2 place-items-center">
+  <img src="/images/ai-portfolio-gen-02.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-03.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
 </div>
+
 
 ---
 layout: default
-zoom: 0.5
 ---
 
 # 03d. Portfolio generation 3
 
-<div class="grid grid-cols-2 gap-4 mt-4 place-items-center">
-
-<img src="/images/ai-portfolio-gen-04.png" class="rounded-lg shadow-lg" />
-
-<img src="/images/ai-portfolio-gen-05.png" class="rounded-lg shadow-lg" />
-
+<div class="grid grid-cols-2 gap-4 mt-2 place-items-center">
+  <img src="/images/ai-portfolio-gen-04.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
+  <img src="/images/ai-portfolio-gen-05.png" class="max-h-[420px] object-contain rounded-lg shadow-lg" />
 </div>
+
 
 ---
 layout: default
