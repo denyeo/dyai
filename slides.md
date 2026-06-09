@@ -3,7 +3,6 @@ theme: seriph
 class: text-center
 layout: two-cols
 lineNumbers: false
-routerMode: hash
 info: |
   The Agentic Era for Dummies
   A Builder's Guide for Managers & Professionals
